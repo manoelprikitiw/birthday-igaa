@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Iga 🩵</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #28557f;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9f7ff,
+            #c8e7ff,
+            #e0f3ff
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HALAMAN
+========================= */
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+
+    position: relative;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   KARTU
+========================= */
+
+.card {
+    background:
+        rgba(255,255,255,0.80);
+
+    padding: 35px 25px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(40,100,160,0.15);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================
+   TEKS
+========================= */
+
+.small {
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.65;
+
+    text-transform: uppercase;
+}
+
+
+h1 {
+    font-size: clamp(45px,12vw,75px);
+
+    margin: 15px 0;
+
+    color: #4d8dcc;
+}
+
+
+h2 {
+    font-size: 35px;
+
+    margin: 10px 0;
+
+    color: #3977b8;
+}
+
+
+h3 {
+    font-size: 24px;
+
+    color: #3977b8;
+}
+
+
+p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 15px 0;
+}
+
+
+/* =========================
+   EMOJI
+========================= */
+
+.bigEmoji {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TOMBOL
+========================= */
+
+button {
+    margin-top: 20px;
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #6fa7df;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(60,120,180,0.20);
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    transform: translateY(-3px);
+
+    background: #5d96d0;
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================
+   WISHES
+========================= */
+
+.wish {
+    text-align: left;
+
+    padding: 14px 16px;
+
+    margin: 10px 0;
+
+    border-radius: 17px;
+
+    background: #edf8ff;
+}
+
+
+/* =========================
+   DEKORASI
+========================= */
+
+.cloud {
+    position: absolute;
+
+    font-size: 30px;
+
+    opacity: 0.55;
+
+    animation:
+        float 5s
+        ease-in-out
+        infinite;
+}
+
+
+.cloud1 {
+    left: 8%;
+    top: 15%;
+}
+
+
+.cloud2 {
+    right: 8%;
+    top: 25%;
+
+    animation-delay: 1s;
+}
+
+
+.cloud3 {
+    left: 12%;
+    bottom: 15%;
+
+    animation-delay: 2s;
+}
+
+
+.cloud4 {
+    right: 12%;
+    bottom: 12%;
+
+    animation-delay: 3s;
+}
+
+
+@keyframes float {
+
+    50% {
+        transform:
+            translateY(-15px);
+    }
+
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+
+    position: fixed;
+
+    top: -20px;
+
+    font-size: 20px;
+
+    animation:
+        fall 3s
+        linear
+        forwards;
+
+    z-index: 999;
+
+    pointer-events: none;
+}
+
+
+@keyframes fall {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(500deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HALAMAN 1
+========================= -->
+
+<section class="page">
+
+    <div class="cloud cloud1">
+        ☁️
+    </div>
+
+    <div class="cloud cloud2">
+        ✨
+    </div>
+
+    <div class="cloud cloud3">
+        🩵
+    </div>
+
+    <div class="cloud cloud4">
+        ☁️
+    </div>
+
+
+    <div class="container">
+
+        <p class="small">
+            A little something for you
+        </p>
+
+
+        <h1>
+            Hey, Iga! 🩵
+        </h1>
+
+
+        <p>
+            Ada sesuatu yang spesial
+            buat kamu hari ini ✨
+        </p>
+
+
+        <button onclick="nextPage(2)">
+            Buka 🎁
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     HALAMAN 2
+========================= -->
+
+<section class="page">
+
+    <div class="container">
+
+        <div class="bigEmoji">
+            🎂 ✨ 🩵
+        </div>
+
+
+        <h1>
+            HAPPY
+            <br>
+            BIRTHDAY!
+        </h1>
+
+
+        <h2>
+            IGA
+        </h2>
+
+
+        <p>
+            17th Birthday 🎀
+        </p>
+
+
+        <button onclick="nextPage(3)">
+            Lanjut 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     HALAMAN 3
+========================= -->
+
+<section class="page">
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="bigEmoji">
+                💌
+            </div>
+
+
+            <h3>
+                A little message for you
+            </h3>
+
+
+            <p>
+                Selamat ulang tahun,
+                Iga! 🩵
+            </p>
+
+
+            <p>
+                Semoga hari ini jadi
+                salah satu hari yang
+                paling menyenangkan
+                buat kamu.
+            </p>
+
+
+            <p>
+                Thank you for being
+                a good friend. ✨
+            </p>
+
+
+            <button onclick="nextPage(4)">
+                Lanjut ✨
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     HALAMAN 4
+========================= -->
+
+<section class="page">
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="bigEmoji">
+                ✨
+            </div>
+
+
+            <h3>
+                My wishes for you
+            </h3>
+
+
+            <div class="wish">
+                🩵 Semoga selalu
+                dikelilingi orang-orang
+                baik.
+            </div>
+
+
+            <div class="wish">
+                🩵 Semoga semua yang
+                kamu usahakan berjalan
+                lancar.
+            </div>
+
+
+            <div class="wish">
+                🩵 Semoga keinginanmu
+                satu per satu tercapai.
+            </div>
+
+
+            <div class="wish">
+                🩵 Semoga selalu punya
+                alasan untuk tersenyum.
+            </div>
+
+
+            <div class="wish">
+                🩵 Jangan lupa istirahat
+                dan nikmati hal-hal kecil.
+            </div>
+
+
+            <p>
+                <b>
+                    You deserve good things,
+                    Iga.
+                </b>
+                ☁️
+            </p>
+
+
+            <button onclick="birthday()">
+                One last thing 🩵
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     HALAMAN 5
+========================= -->
+
+<section class="page">
+
+    <div class="container">
+
+        <div class="bigEmoji">
+            🎀 🩵 ✨
+        </div>
+
+
+        <h2>
+            Happy 17th Birthday,
+            Iga!
+        </h2>
+
+
+        <p>
+            Semoga tahun ini
+            membawa banyak hal baik,
+            cerita baru,
+            dan banyak alasan
+            untuk bahagia.
+        </p>
+
+
+        <p>
+            Semoga kamu selalu
+            menjadi versi terbaik
+            dari dirimu sendiri. 🩵
+        </p>
+
+
+        <p>
+            <b>
+                — Nuel 🩵
+            </b>
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+
+/* =========================
+   SISTEM SUARA
+========================= */
+
+let audioContext;
+
+
+function createSound(
+    frequency,
+    duration,
+    volume = 0.08
+) {
+
+    if (!audioContext) {
+
+        audioContext =
+            new (
+                window.AudioContext ||
+                window.webkitAudioContext
+            )();
+
+    }
+
+
+    const oscillator =
+        audioContext.createOscillator();
+
+
+    const gain =
+        audioContext.createGain();
+
+
+    oscillator.type = "sine";
+
+
+    oscillator.frequency.value =
+        frequency;
+
+
+    gain.gain.setValueAtTime(
+        volume,
+        audioContext.currentTime
+    );
+
+
+    gain.gain.exponentialRampToValueAtTime(
+        0.001,
+        audioContext.currentTime + duration
+    );
+
+
+    oscillator.connect(gain);
+
+
+    gain.connect(
+        audioContext.destination
+    );
+
+
+    oscillator.start();
+
+
+    oscillator.stop(
+        audioContext.currentTime + duration
+    );
+
+}
+
+
+/* =========================
+   SUARA KLIK
+========================= */
+
+function clickSound() {
+
+    createSound(
+        700,
+        0.10,
+        0.05
+    );
+
+}
+
+
+/* =========================
+   SUARA POP
+========================= */
+
+function popSound() {
+
+    createSound(
+        500,
+        0.12,
+        0.06
+    );
+
+
+    setTimeout(
+        function() {
+
+            createSound(
+                900,
+                0.15,
+                0.05
+            );
+
+        },
+        80
+    );
+
+}
+
+
+/* =========================
+   SUARA TADA
+========================= */
+
+function tadaSound() {
+
+    createSound(
+        523,
+        0.15,
+        0.06
+    );
+
+
+    setTimeout(
+        function() {
+
+            createSound(
+                659,
+                0.15,
+                0.06
+            );
+
+        },
+        150
+    );
+
+
+    setTimeout(
+        function() {
+
+            createSound(
+                784,
+                0.35,
+                0.07
+            );
+
+        },
+        300
+    );
+
+}
+
+
+/* =========================
+   PINDAH HALAMAN
+========================= */
+
+function nextPage(number) {
+
+    popSound();
+
+
+    const pages =
+        document.querySelectorAll(
+            ".page"
+        );
+
+
+    if (
+        pages[number - 1]
+    ) {
+
+        pages[number - 1]
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+
+    }
+
+}
+
+
+/* =========================
+   ULANG TAHUN
+========================= */
+
+function birthday() {
+
+    tadaSound();
+
+
+    const pages =
+        document.querySelectorAll(
+            ".page"
+        );
+
+
+    pages[4].scrollIntoView({
+        behavior: "smooth"
+    });
+
+
+    const emojis = [
+
+        "🩵",
+        "✨",
+        "🎀",
+        "💙",
+        "⭐",
+        "🎉"
+
+    ];
+
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.innerText =
+            emojis[
+                Math.floor(
+                    Math.random()
+                    *
+                    emojis.length
+                )
+            ];
+
+
+        confetti.style.left =
+            Math.random()
+            * 100
+            + "vw";
+
+
+        confetti.style.animationDelay =
+            Math.random()
+            * 0.7
+            + "s";
+
+
+        confetti.style.fontSize =
+            (12 + Math.random() * 15)
+            + "px";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            function() {
+
+                confetti.remove();
+
+            },
+            3500
+        );
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
